@@ -1,0 +1,159 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 2rem;
+	overflow: hidden;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.adding {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3em;
+	margin: 1em 0;
+
+	&__info {
+		display: none;
+		position: absolute;
+		text-transform: uppercase;
+		bottom: 0;
+		background-color: rgb(149, 236, 18);
+		padding: 1em 100%;
+		border-radius: 12px;
+		cursor: pointer;
+
+	}
+
+	&__info--active {
+		display: block;
+		position: absolute;
+		text-transform: uppercase;
+		bottom: 0;
+		background-color: rgb(149, 236, 18);
+		padding: 1em 100%;
+		border-radius: 12px;
+
+	}
+
+	i {
+		position: absolute;
+		left: 0;
+		color: black;
+		cursor: pointer;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+
+	&__heading {
+		position: relative;
+		text-align: center;
+
+		font-weight: 500;
+		margin-bottom: 1em;
+	}
+
+	&__form {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+
+		label {
+			margin-bottom: 0.3em;
+		}
+	}
+
+	&__input {
+		background: #F6F4FF;
+		padding: 1em 1em;
+		margin-bottom: 2em;
+		grid-column: 1 / -1;
+		border-radius: 5px;
+		border: 1px solid rgba(83, 81, 81, 0.37);
+		font-size: 1.6rem;
+
+		&-weight {
+			grid-column: 1 / 2;
+			min-width: 67px;
+			margin-right: 0.5em;
+		}
+
+		&-height {
+			grid-column: 2 / 3;
+			min-width: 67px;
+			margin-left: 0.5em;
+		}
+	}
+
+	&__label-weight {
+		grid-column: 1 / 2;
+		grid-row: 7/8;
+	}
+
+	&__label-height {
+		grid-column: 2 / 3;
+		grid-row: 7/8;
+		margin-left: 0.5em;
+	}
+
+	&__button {
+		background: #F6F4FF;
+
+		margin-bottom: 2em;
+		padding: 1.5em 1em;
+		text-align: center;
+		color: rgba(0, 0, 0, 0.219);
+		border-radius: 5px;
+		border: 1px solid rgba(0, 0, 0, 0.219);
+		cursor: pointer;
+
+		&-click {
+			color: black;
+			border: 1px solid black;
+		}
+
+		&-male {
+			margin-right: 0.5em;
+		}
+		&-female {
+			margin-left: 0.5em;
+		}
+	}
+
+	&__send {
+		grid-column: 1/-1;
+		padding: 1em 0;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		background-color: rgb(134, 131, 208);
+		border-radius: 8px;
+		transition: box-shadow 0.3s;
+
+		&:hover {
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+}

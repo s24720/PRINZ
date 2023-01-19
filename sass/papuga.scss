@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 2rem;
+	overflow: hidden;
+}
+
+.papuga {
+	padding: 1.5em 2em;
+        
+
+	&__img {
+		height: 40vh;
+		background-image: url('../img/toucan-4185361_1280.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+
+    &__block{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__name{
+        h3{
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-left: 1em;
+        }
+
+        p{
+            margin-top: 0.2em;
+            color: rgba(0, 0, 0, 0.507);
+            margin-left: 1.2em;
+        }
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        i{
+            margin-right: 1em;
+            font-size: 2em;
+            color: rgb(134, 131, 208);
+        }
+    }
+
+
+    &__info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin-top: 3em;
+
+        &-block{
+            text-align: center;
+            margin-bottom: 1em;
+
+            &-p{
+                margin-top: 0.2em;
+                color: rgba(0, 0, 0, 0.507);
+        }
+    }
+
+    &-5{
+        margin-top: 1em;
+        grid-column: 1/-1;
+    }
+}
+
+&__description{
+    margin-top: 2em;
+
+    h3{
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+}
+
+&__back{
+    margin-top: 2em;
+    text-align: center;
+
+    &-click{
+        text-decoration: none;
+        text-align: center;
+        padding: 1em 4em;
+		text-align: center;
+		text-decoration: none;
+		color: white;
+		background-color: rgb(134, 131, 208);
+		border-radius: 50px;
+		transition: box-shadow 0.3s;
+
+		&:hover {
+			box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		}
+    }
+
+
+}
+
+}
+
+.hr-1{
+    margin-top: 1em;
+}
+
+.hr-2{
+    margin-bottom: 1em;
+}
+
+
+.click{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+   z-index: 1000;
+
+    &:hover{
+        scale: 1.1;
+    }
+
+
+}
+
+i{
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.678);
+}
+
