@@ -33,7 +33,7 @@
     main{
         width: 100vw;
         height: 100vh;
-        background-image: url("/img/qr.jpg");
+        background-image: url("./img/qr.jpg");
         background-position: center;
         background-size: 80%;
     }
